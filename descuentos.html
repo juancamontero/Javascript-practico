@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descuentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="precios">
+      <h1>Precios y descuentos</h1>
+
+      <form class="porcentajes">
+        <label for="precio" class="label">Precio ($)</label>
+        <input type="number" id="precio" placeholder="$ __" class="input" />
+
+        <label for="porcentaje" class="label">Porcentaje (%)</label>
+        <input
+          type="number"
+          id="porcentaje"
+          placeholder="__ % "
+          class="input"
+        />
+
+        <label for="cupon" class="label">Cupón</label>
+        <input
+          type="text"
+          id="cupon"
+          placeholder="_______ "
+          class="input"
+        />
+
+        <button
+          type="button"
+          onclick="caculaPrecioFinal()"
+          class="primary-button"
+        >
+          Calcular precio final
+        </button>
+
+       
+      </form>
+
+      <div class="porcentajes">
+        <div class="resultado">
+          <p id="price-result"></p>
+          <p id="coupon-result"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./descuentos.js"></script>
+  </body>
+</html>
