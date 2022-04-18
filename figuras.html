@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras geométricas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./figures.css" />
+  </head>
+  <body>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>Taller 1</p>
+      </header>
+    <div class="calculator">
+     
+
+      <section>
+        <h2>Area y perímetro cuadrado</h2>
+        <form>
+          <label for="squareSide" class="label">Lado (cm)</label>
+          <input type="number" name="" id="squareSide" class="input" />
+          <button
+            type="button"
+            class="primary-button"
+            onclick="calcSquarePerim()"
+          >
+            Calc perímetro
+          </button>
+          <button
+            type="button"
+            class="primary-button"
+            onclick="calcSquareArea()"
+          >
+            Calc área
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Area y perímetro triangulo</h2>
+        <form>
+          <label for="side1" class="label">Lado1 (cm)</label>
+          <input type="number" name="" id="side1" class="input" />
+
+          <label for="side2" class="label">Lado2 (cm)</label>
+          <input type="number" name="" id="side2" class="input" />
+
+          <label for="base" class="label">Lado3 - Base (cm)</label>
+          <input type="number" name="" id="base" class="input" />
+
+          <label for="heigth" class="label">Altura (cm)</label>
+          <input type="number" name="" id="heigth" class="input" />
+
+          <button
+            type="button"
+            class="primary-button"
+            onclick="calcTrianPerim()"
+          >
+            Calc perímetro
+          </button>
+          <button
+            type="button"
+            class="primary-button"
+            onclick="calcTrianArea()"
+          >
+            Calc área
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Area y perímetro circulo</h2>
+        <form>
+          <label for="radius" class="label">Radio (cm)</label>
+          <input type="number" name="" id="radius" class="input" />
+          <button
+            type="button"
+            class="primary-button"
+            onclick="calcCirclePerim()"
+          >
+            Calc perímetro
+          </button>
+          <button
+            type="button"
+            class="primary-button"
+            onclick="calcCircleArea()"
+          >
+            Calc área
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <script src="./figuras.js"></script>
+  </body>
+</html>
