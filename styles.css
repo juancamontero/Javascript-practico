@@ -58,9 +58,11 @@
   background-color: var(--hospital-green);
   padding: 8px;
   color: var(--white);
-  margin-top: 12px;
+  margin-top: 8px;
+  margin-bottom: 12px;
   border: none;
   border-radius: 8px;
+  width: 100%;
 }
 
 
@@ -78,6 +80,8 @@
 
 }
 
+
+
 .label {
  font-weight: bold;
  margin-bottom:4px ;
@@ -88,8 +92,9 @@
   background-color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 4px 2px 4px 2px;
+  padding: 8px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .input::placeholder {
@@ -101,6 +106,53 @@
   border: none;
   border-radius: 8px;
   padding: 4px 2px 4px 2px;
+  margin-top: 12px;
+  text-align: center;
+  font-size: var(--sm);
+
+}
+
+.resultado p {
+  line-height: 1.2;
+ 
+}
+
+.estadisticas {
+  background-color: var(--text-input-field);
+ 
+  min-width: 450px;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 12px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+
+
+}
+.input-simple-data {
+  padding: 12px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.botones {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.promedios {
+  width: 50%;
+  min-width: 450px;
+  justify-self: center;
 }
 
 

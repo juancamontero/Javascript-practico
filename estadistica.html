@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estadística</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@100;300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Estadística</h1>
+      <p>Taller 3</p>
+    </header>
+    <div class="promedios">
+     
+      <h2>Simple Data</h2>
+      <form class="estadisticas">
+        <div class="input-simple-data">
+          <label for="simple-data" class="label">Valor</label>
+          <input
+            type="number"
+            id="simple-data"
+            placeholder="0000 "
+            class="input"
+          />
+          <button
+            type="button"
+            class="primary-button"
+            onclick="loadSimpleData()"
+          >
+            Cargar valor
+          </button>
+
+          <h3>Datos actuales</h3>
+          <div class="resultado">
+            <p id="current-data"></p>
+          </div>
+        </div>
+        <div class="botones">
+          <button type="button" class="primary-button" onclick="showMedia()">
+            Media
+          </button>
+          <button type="button" class="primary-button" onclick="showMediana()">
+            Mediana
+          </button>
+          <button type="button" class="primary-button" onclick="showModa()">
+            Moda
+          </button>
+
+          <div class="resultado">
+            <p id="simpleResult"></p>
+          </div>
+        </div>
+      </form>
+
+      <h2>Weighted Data</h2>
+      <form class="estadisticas">
+        <div class="input-simple-data">
+          <label for="id-txt" class="label">Id</label>
+          <input type="text" id="id-txt" placeholder="_ _ _ _" class="input" />
+
+          <label for="value" class="label">Valor</label>
+          <input type="number" id="value" placeholder="0000 " class="input" />
+
+          <label for="peso" class="label">Peso</label>
+          <input type="number" id="peso" placeholder="0000 " class="input" />
+
+          <button
+            type="button"
+            class="primary-button"
+            onclick="loadWeightedData()"
+          >
+            Cargar valores
+          </button>
+
+          <h3>Datos actuales</h3>
+          <div class="resultado">
+            <p id="current-data2"></p>
+          </div>
+        </div>
+        <div class="botones">
+          <button type="button" class="primary-button" onclick="showWeightrdAverage()">
+            Promedio ponderado
+          </button>
+
+          <div class="resultado">
+            <p id="weightedResult"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="./estadistica.js"></script>
+  </body>
+</html>
